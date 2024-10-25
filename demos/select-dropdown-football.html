@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football Drip Drop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css" />
+  </head>
+  <body>
+  <main>
+    <div>
+        <form>
+            <label for= "footballDropdown" class="form-label">NFL Teams</label>
+            <select class="form-select" id="footballDropdown">
+              <option value="">Select....</option>
+              <!-- <option value="DAL">Dallas Cowboys</option> -->
+            </select>
+            <button type="button" onclick="showDetails()">Select Team</button>
+        </form>
+        <p id= "detailsDiv"></p>
+    </div>
+  </main>
+
+ <script src="footballteam.js"></script>
+  </body>
+</html>

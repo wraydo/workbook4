@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moto Movement</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css" />
+  </head>
+  <body>
+    <main class="container mt-4">
+      <div class="card p-4" style="width: 18rem">
+        <form>
+          <label for="motorSelect" class="form-label">Motorcycles</label>
+          <select class="form-select" id="motorSelect">
+            <option value="">Select....</option>
+
+            <!-- <option value="">Ducati</option>
+            <option value="">Suzuki</option>
+            <option value="">Yamaha</option>
+            <option value="">Harley Davidson</option> -->
+          </select>
+        </form>
+      </div>
+    </main>
+    <script>
+      "use strict";
+      //get html elements into variables
+      let motorSelect = document.getElementById("motorSelect");
+
+      let option1 = document.createElement("option");
+      option1.value = "1";
+      option1.innerText = "Ducati";
+      motorSelect.append(option1);
+
+      let option2 = document.createElement("option");
+      option2.value = "2";
+      option2.innerText = "Suzuki";
+      motorSelect.append(option2);
+
+      let option3 = document.createElement("option");
+      option3.value = "3";
+      option3.innerText = "Yamaha";
+      motorSelect.append(option3);
+
+      let option4 = document.createElement("option");
+      option4.value = "4";
+      option4.innerText = "Harley Davidson";
+      motorSelect.append(option4);
+    </script>
+  </body>
+</html>
